@@ -1,4 +1,4 @@
-`ifdef __REGFILE_HEADER__
+`ifndef __REGFILE_HEADER__
     `define __REGFILE_HEADER__
     `define HIGH    1'b1
     `define LOW     1'b0
