@@ -16,7 +16,7 @@ assign d_out = ff[addr];
 always @(posedge clk or negedge reset_) begin
     if (reset == `ENABLE_) begin
         for (i=0; i < `DATA_D; i = i + 1) begin
-            ff[i] <= #1 {`DATA_W{1`b0}};
+            ff[i] <= #1 {`DATA_W{1'b0}};
         end
     end else begin
         if (we_ == `ENABLE_) begin
