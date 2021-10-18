@@ -6,7 +6,7 @@ module regfile (
     input wire [`AddrBus] addr,
     input wire [`DataBus] d_in,
     input wire            we_,
-    input wire [`DataBus] d_out
+    output wire [`DataBus] d_out
 );
 
 reg [`DataBus] ff [`DATA_D-1:0];
