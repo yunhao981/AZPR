@@ -20,7 +20,7 @@ module regfile_test;
         .addr (addr),
         .d_in (d_in),
         .we_ (we_),
-        .d_out (d_out),
+        .d_out (d_out)
     );
 
     initial begin
