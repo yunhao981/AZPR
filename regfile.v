@@ -24,3 +24,5 @@ always @(posedge clk or negedge reset_) begin
         end
     end
 end
+
+endmodule
