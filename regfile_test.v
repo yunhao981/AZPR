@@ -10,7 +10,7 @@ module regfile_test;
     integer i;
     parameter STEP = 100.0000;
 
-    always @(STEP / 2) begin
+    always #(STEP / 2) begin
         clk <= ~clk;
     end
 
