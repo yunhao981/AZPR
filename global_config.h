@@ -17,9 +17,13 @@
 
     `ifdef POSITIVE_RESET
         `define RESET_EDGE posedge
-    `else
+        `define RESET_ENABLE 
+    `endif
+
+    `ifdef NEGATIVE_RESET        
         `define RESET_EDGE negedge
     `endif
+
 `endif
         
 
